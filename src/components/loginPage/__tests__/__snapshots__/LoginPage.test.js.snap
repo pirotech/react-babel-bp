@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login page should redirect with valid token 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Connect(LoginPage)
+    history={
+      Object {
+        "push": [MockFunction] {
+          "calls": Array [
+            Array [
+              "/",
+            ],
+          ],
+          "results": Array [
+            Object {
+              "type": "return",
+              "value": undefined,
+            },
+          ],
+        },
+      }
+    }
+  >
+    <LoginPage
+      history={
+        Object {
+          "push": [MockFunction] {
+            "calls": Array [
+              Array [
+                "/",
+              ],
+            ],
+            "results": Array [
+              Object {
+                "type": "return",
+                "value": undefined,
+              },
+            ],
+          },
+        }
+      }
+      i18n={
+        Object {
+          "changeLanguage": [Function],
+          "language": "en",
+        }
+      }
+      isAuthorized={true}
+      login={[Function]}
+      t={[Function]}
+    >
+      <div
+        className="login-page"
+      >
+        <UiLanguageSelector
+          i18n={
+            Object {
+              "changeLanguage": [Function],
+              "language": "en",
+            }
+          }
+          t={[Function]}
+        >
+          <div
+            className="ui-language-selector"
+          >
+            <button
+              onClick={[Function]}
+            >
+              en
+            </button>
+          </div>
+        </UiLanguageSelector>
+        <p>
+          username
+        </p>
+        <input
+          onChange={[Function]}
+          type="text"
+        />
+        <p>
+          password
+        </p>
+        <input
+          onChange={[Function]}
+          type="text"
+        />
+        <button
+          className="login-page__submit-button"
+          onClick={[Function]}
+        >
+          loginButton
+        </button>
+      </div>
+    </LoginPage>
+  </Connect(LoginPage)>
+</Provider>
+`;
+
+exports[`Login page should render 1`] = `
+<Provider
+  store={
+    Object {
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+    }
+  }
+>
+  <Connect(LoginPage)
+    history={
+      Object {
+        "push": [MockFunction],
+      }
+    }
+  >
+    <LoginPage
+      history={
+        Object {
+          "push": [MockFunction],
+        }
+      }
+      i18n={
+        Object {
+          "changeLanguage": [Function],
+          "language": "en",
+        }
+      }
+      isAuthorized={false}
+      login={[Function]}
+      t={[Function]}
+    >
+      <div
+        className="login-page"
+      >
+        <UiLanguageSelector
+          i18n={
+            Object {
+              "changeLanguage": [Function],
+              "language": "en",
+            }
+          }
+          t={[Function]}
+        >
+          <div
+            className="ui-language-selector"
+          >
+            <button
+              onClick={[Function]}
+            >
+              en
+            </button>
+          </div>
+        </UiLanguageSelector>
+        <p>
+          username
+        </p>
+        <input
+          onChange={[Function]}
+          type="text"
+        />
+        <p>
+          password
+        </p>
+        <input
+          onChange={[Function]}
+          type="text"
+        />
+        <button
+          className="login-page__submit-button"
+          onClick={[Function]}
+        >
+          loginButton
+        </button>
+      </div>
+    </LoginPage>
+  </Connect(LoginPage)>
+</Provider>
+`;

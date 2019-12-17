@@ -1,0 +1,4 @@
+{
+  "greetings": "Привет, {{username}}!",
+  "secretMessage": "Это очень секретное сообщение"
+}

@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Language selector test Snapshot test with mount 1`] = `
+<withI18nextTranslation(UiLanguageSelector)>
+  <UiLanguageSelector
+    i18n={Object {}}
+    t={[Function]}
+    tReady={false}
+  >
+    <div
+      className="ui-language-selector"
+    >
+      <button
+        onClick={[Function]}
+      />
+    </div>
+  </UiLanguageSelector>
+</withI18nextTranslation(UiLanguageSelector)>
+`;
+
+exports[`Language selector test Snapshot test with render 1`] = `
+<div
+  class="ui-language-selector"
+>
+  <button />
+</div>
+`;
+
+exports[`Language selector test Snapshot test with shallow 1`] = `
+<UiLanguageSelector
+  i18n={Object {}}
+  t={[Function]}
+  tReady={false}
+/>
+`;
