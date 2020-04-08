@@ -1,19 +1,11 @@
 const path = require ('path');
-const webpack = require('webpack');
-const dotenv = require('dotenv');
+const Dotenv = require('dotenv-webpack');
 const Promise = require('bluebird');
 
 const loaders = require('./loaders.js');
 const plugins = require('./plugins.js');
 
 module.exports = () => {
-  // load environment variables
-  const env = dotenv.config().parsed;
-  const preparedEnv = Object.keys(env).reduce((sum, item) => {
-    sum[`process.env.${item}`] = JSON.stringify(env[item]);
-    return sum;
-  }, {});
-
   // configure Promise
   const devMode = process.env.NODE_ENV !== 'production';
   Promise.config({
@@ -24,11 +16,16 @@ module.exports = () => {
 
   return {
     entry: './src/index.js',
-      devServer: {
+    devtool: devMode ? 'inline-source-map' : '',
+    devServer: {
+      disableHostCheck: true,
       port: 8888,
       contentBase: './dist',
       publicPath: '/',
-      historyApiFallback: true
+      historyApiFallback: true,
+      headers: {
+        'Access-Control-Allow-Origin': '*'
+      }
     },
     module: {
       rules: [
@@ -43,7 +40,7 @@ module.exports = () => {
       plugins.CleanWebpackPlugin,
       plugins.MiniCssExtractPlugin,
       plugins.HtmlWebPackPlugin,
-      new webpack.DefinePlugin(preparedEnv)
+      new Dotenv()
     ],
     resolve: {
       extensions: ['.js', '.jsx'],

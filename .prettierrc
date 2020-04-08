@@ -4,5 +4,8 @@
   "singleQuote": true,
   "quoteProps": "as-needed",
   "bracketSpacing": true,
-  "proseWrap": "always"
+  "proseWrap": "always",
+  "jsxBracketSameLine": false,
+  "arrowParens": "avoid",
+  "endOfLine": "crlf"
 }
