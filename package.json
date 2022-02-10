@@ -40,7 +40,7 @@
     "jest-styled-components": "^6.3.4",
     "jest-transform-css": "^2.0.0",
     "mini-css-extract-plugin": "^0.8.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "postcss": "^7.0.23",
     "postcss-loader": "^3.0.0",
     "pretty-quick": "^2.0.1",
